@@ -21,8 +21,7 @@
     "react-simple-animate": "^3.5.2",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.69.5",
-    "tsparticles": "^3.0.3",
-    "tsparticles-preset-links": "^1.18.3"
+    "tsparticles": "^3.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

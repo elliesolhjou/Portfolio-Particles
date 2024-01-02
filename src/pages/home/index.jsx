@@ -1,25 +1,18 @@
 
-import Particles from '@tsparticles/react';
-import { loadFull } from 'tsparticles';
-import particlesConfig from "../../helpers/particlesConfig";
+import "./style.scss"
 
-const TestParticles = () => {
-  const particleInit = async (main) => {
-    console.log('particleInit called, main:', main);
-    try {
-      await loadFull(main);
-    } catch (error) {
-      console.error('Error in particleInit:', error);
-    }
-  };
+const Home = () =>{
+  return(
+    <section className="home" id="home">
+      <div className="home__text-wrapper">
+        <h1>Hello, I am Ellie Solhjou.
+          <br/>
+          Full Stack Developer
+        </h1>
+      </div>
 
-  return (
-    <Particles
-      id="test-particles"
-      init={particleInit}
-      options={{particlesConfig}}
-    />
-  );
-};
+    </section>
+  )
+}
 
-export default TestParticles;
+export default Home
