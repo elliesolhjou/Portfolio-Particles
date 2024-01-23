@@ -7,7 +7,7 @@ const Home = () =>{
       <div className="home__text-wrapper">
         <h1>Hello, I am Ellie Solhjou.
           <br/>
-          Full Stack Developer
+          A Full Stack Developer
         </h1>
       </div>
 
