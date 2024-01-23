@@ -1,5 +1,6 @@
 
 import "./style.scss"
+import {FaLinkedin,FaGithub} from 'react-icons/fa'
 
 const Home = () =>{
   return(
@@ -10,20 +11,19 @@ const Home = () =>{
           A Full Stack Developer
         </h1>
         <div className="contact-wrapper">
-          <div className="contact-wrapper-button">
-            <button>Hire Me</button>
+          <div className="contact-wrapper__button-wrapper">
+            <button>Email Me</button>
             <button>Download Resume</button>
           </div>
-          <div className="social-wrapper">
-            <div className="social-wrapper-button">
-              <button>Linkedin</button>
-              <button>GitHub</button>
-            </div>
+          <div className="contact-wrapper__social-wrapper">
+            <FaLinkedin size={40}/>
+            <FaGithub size={40}/>
+          </div>
 
           </div>
 
         </div>
-      </div>
+
 
     </section>
   )
