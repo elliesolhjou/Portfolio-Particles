@@ -6,6 +6,7 @@ import Main from "./components/main";
 import Footer from "./components/footer";
 import "./App.scss";
 
+
 function App() {
   const [init, setInit] = useState(false);
 
@@ -91,6 +92,7 @@ function App() {
       }))
 
   return (
+    
     <div className="App">
       <Particles id="particles" options={options} init={particlesLoaded}/>
       <div className="App__header_Wrapper">

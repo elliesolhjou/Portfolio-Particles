@@ -4,6 +4,7 @@ import {HiX} from "react-icons/hi"
 import navMenus from "./config"
 import { useState } from "react"
 import "./styles.scss"
+import Theme from '../theme'
 
 console.log(navMenus)
 export default function Header(){
@@ -12,6 +13,7 @@ export default function Header(){
         setClick(!click)
     }
     return(
+        
         <div className="Header">
             <nav className="navbar">
                 <div className="navbar__container">

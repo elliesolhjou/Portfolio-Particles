@@ -10,7 +10,7 @@ import Theme from '../theme'
 export default function Main() {
   return (
     <div className="Main__main_content-wrapper">
-      <Theme />
+      <Theme/>
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/" element={<Home />} />

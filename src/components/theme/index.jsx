@@ -1,6 +1,7 @@
 // import React from 'react';
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import { ImCog } from "react-icons/im";
+import setTheme from '../../helpers/theme'
 import './styles.scss'
 
 const colorsArray = [
@@ -23,13 +24,18 @@ const colorsArray = [
 ];
 
 const Theme = () => {
-    const [theme, setTheme] = useState('yellow')
+    const [theme, setCurrentTheme] = useState('yellow')
     const [toggle, setToggle] = useState(false)
 
+    // color id is the param provided to this function inside the map fn below
     const handleToggleTheme=(currentId)=>{
-        setTheme(currentId)
+        setCurrentTheme(currentId)
+        console.log(currentId)
         setToggle(false)
     }
+    useEffect(()=>{
+    setTheme(theme)
+    }, [theme])
   return (
     <div className={`theme-wrapper ${toggle? 'active' :""}`}>
       <div className="theme-wrapper__toggle-icon">
