@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -100px;
     &__text-wrapper {
         display: flex;
         // contact-wrapper is not direct child of home so flex direction might not work -> apply the styling to the parent of child
