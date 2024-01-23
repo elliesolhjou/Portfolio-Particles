@@ -8,7 +8,7 @@ import Contact from "../../pages/contact"
 
 export default function Main() {
   return (
-    <div className="Main">
+    <div className="Main__main_content-wrapper">
       Main Component Goes here
       <Routes>
         <Route path="/about" element={<About />} />

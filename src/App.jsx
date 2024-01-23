@@ -89,8 +89,7 @@ function App() {
         },
         "detectRetina": true,
       }))
-  // const location= useLocation()
-  // console.log(location)
+
   return (
     <div className="App">
       <Particles id="particles" options={options} init={particlesLoaded}/>
