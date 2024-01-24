@@ -93,8 +93,8 @@ const Home = () => {
         <Particles id="particles" options={options} init={particlesLoaded}/>
         <div className="home__text-wrapper">
           <h1>
-            Hello, I am Ellie.
-            <br />A Full Stack Developer
+            Hello, I am Ellie
+            <br />A Full Stack Developer.
           </h1>
           <Animate
             play
