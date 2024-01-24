@@ -1,6 +1,8 @@
 import PageHeaderContent from "../../components/pageHeader";
 import { BsInfoCircleFill } from "react-icons/bs";
 import personalData from "./about.js";
+// import {DiApple} from 'react-icons/di'
+import { FaDev, FaAws, FaFigma, FaNodeJs, FaPython, FaCss3 } from "react-icons/fa";
 import "./style.scss";
 
 const About = () => {
@@ -24,7 +26,28 @@ const About = () => {
             ))}
           </ul>
         </div>
-        <div className="about__content__serviceWrapper"></div>
+        <div className="about__content__serviceWrapper">
+          <div className="about__content__serviceWrapper__innerContent">
+            <div>
+              <FaAws size={60} color="var(--selected-theme-main-color)" />
+            </div>
+            <div>
+              <FaDev size={60} color="var(--selected-theme-main-color)" />
+            </div>
+            <div>
+              <FaPython size={60} color="var(--selected-theme-main-color)" />
+            </div>
+            <div>
+              <FaNodeJs size={60} color="var(--selected-theme-main-color)" />
+            </div>
+            {/* <div>
+              <FaCss3 size={60} color="var(--selected-theme-main-color)" />
+            </div> */}
+            {/* <div>
+              <FaFigma size={60} color="var(--selected-theme-main-color)" />
+            </div> */}
+          </div>
+        </div>
       </div>
     </section>
   );
