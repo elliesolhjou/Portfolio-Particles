@@ -1,10 +1,17 @@
-import React from "react"
+import PageHeaderContent from '../../components/pageHeader'
+import {BsInfoCircleFill} from 'react-icons/bs'
+
+
 
 const About = () =>{
     return(
-        <div>
-            About
-        </div>
+<section className="about" id="about">
+    <PageHeaderContent 
+    headerText ='About Me'
+    icon ={ <BsInfoCircleFill size={50}/> }
+    />
+
+</section>
     )
 }
 

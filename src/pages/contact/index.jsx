@@ -1,10 +1,9 @@
-import React from "react"
+import PageHeaderContent from "../../components/pageHeader"
+
 
 const Contact = () =>{
     return(
-        <div>
-            Contact
-        </div>
+        <PageHeaderContent />
     )
 }
 

@@ -34,6 +34,7 @@ const Home = () => {
         </Animate>
       </div>
     </section>
+    
   );
 };
 

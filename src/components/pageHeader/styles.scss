@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px dashed var(--selected-theme-main-color);
+    border-bottom: 10px dashed var(--selected-theme-main-color);
+ 
 
-    h2{
+    h1{
         font-size: 36px;
         font-weight: 700;
         letter-spacing: 1.5px;
@@ -12,5 +13,13 @@
         text-transform: capitalize;
         color: var(--selected-theme-main-color);
         position: relative;
+        display: flex;
+        //  to take the whole width as one cell->
+        flex: 1;
+    }
+    span{
+        svg{
+            color: var(--selected-theme-main-color);
+        }
     }
 }

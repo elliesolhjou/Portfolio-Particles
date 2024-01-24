@@ -1,4 +1,4 @@
-import React from "react"
+import PageHeaderContent from "../../components/pageHeader"
 
 const Skills = () =>{
     return(
