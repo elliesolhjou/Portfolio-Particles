@@ -1,26 +1,86 @@
-import PageHeaderContent from "../../components/pageHeader"
-import {AiFillProject} from 'react-icons/ai'
-import { filterOptions } from "./utils"
+import { useState } from "react";
+import PageHeaderContent from "../../components/pageHeader";
+import { AiFillProject } from "react-icons/ai";
+import { filterOptions, portfolioData } from "./utils";
+import "./style.scss";
 
-const Projects = () =>{
-    return(
+const Projects = () => {
+    const [filterValue, setFilterValue] = useState(1);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
+
+    const handleFilter = (id) => {
+        setFilterValue(id);
+    };
+    console.log(filterValue);
+    const filteredPortfolioData =
+        filterValue === 1
+        ? portfolioData
+        : portfolioData.filter((item) => item.sectionId === filterValue);
+
+    return (
         <div>
-            <section className="portfolio" id="portfolio">
-                <PageHeaderContent headerText={'My Portfolio'} icon={<AiFillProject size={40}/>}/>
-                <div className="portfolio__content">
-                    <div className="portfolio__content__filter">
-                        {
-                            filterOptions.map((option)=>(
-                                <li key={option.id}>
-                                    {option.label}
-                                </li>
-                            ))
-                        }
+        <section className="portfolio" id="portfolio">
+            <PageHeaderContent headerText={"My Portfolio"}
+            icon={<AiFillProject size={40}/>} />
+            <div className="portfolio__content">
+                <ul className="portfolio__content__filter">
+                    {filterOptions.map((option) => (
+                    <li key={option.id} onClick={()=> handleFilter(option.id)}>{option.label}</li>
+                    ))}
+                </ul>
+            <div className="portfolio_content__cards">
+                {filteredPortfolioData.map((item, key) => (
+                <div key={key} className="portfolio__content__cards__item">
+                    <div className="portfolio__content__cards__item__img-wrapper">
+                    <img src={item.image} alt={item.projectName} />
+                    <div className="overlay">
+                        <div className="projectName">
+                        <p>{item.projectName}</p>
+                        <button className="button">Live App</button>
+                        <button className="button">GitHub</button>
+                        </div>
+                    </div>
                     </div>
                 </div>
-            </section>
+                ))}
+            </div>
+            </div>
+        </section>
         </div>
-    )
-}
+    );
+};
 
-export default Projects
+
+//  
+
+//             <div className="portfolio_content__cards">
+//                 {filteredPortfolioData.map((item, key) => (
+//                 <div
+//                 onMouseEnter={()=>setHoveredIndex(key)} onMouseLeave={()=>setHoveredIndex(null)}
+//                     key={key}
+//                     className="portfolio_content__cards__item"
+//                 >
+//                     <div className="portfolio_content__cards__item__img-wrapper">
+//                     <a>
+//                         <img src={item.image} alt={item.projectName} />
+//                     </a>
+//                     </div>
+//                     <div className="overlay">
+//                         {/* { */}
+//                         {/* // hoveredIndex === key &&( */}
+//                             <div className="projectName">
+//                                 <p>{item.projectName}</p>
+//                                 <button className='button'>Visit</button>
+//                         </div>
+//                         {/* )} */}
+//                     </div>
+//                 </div>
+//                 ))}
+//             </div>
+//             </div>
+//         </section>
+//         </div>
+//     );
+// };
+
+export default Projects;
