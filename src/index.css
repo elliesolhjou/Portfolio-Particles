@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Slab:wght@500&display=swap");
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --selected-theme-background-color: var(--yellow-theme-background-color);
   --selected-theme-main-color: var(--yellow-theme-main-color);

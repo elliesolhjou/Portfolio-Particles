@@ -15,10 +15,7 @@ const navMenus = [
         label:"SKILLS",
         to: "/skills"
     },
-    {
-        label:"RESUME",
-        to: "/resume"
-    },
+
     {
         label:"CONTACT",
         to: "/contact"

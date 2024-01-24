@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skills{
+    &__skillWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        margin-left: 25VW;
+        margin-top: 10vw;
+
+        &__card{
+            width: 500px;
+
+        }
+    }
+
+}
