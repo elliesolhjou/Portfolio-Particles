@@ -47,7 +47,7 @@ export const filterOptions = [
     id: 2,
   },
   {
-    label: "Project Engineering Management",
+    label: "Agile Management",
     id: 3,
   },
 ];

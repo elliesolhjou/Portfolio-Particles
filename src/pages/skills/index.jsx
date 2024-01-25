@@ -18,7 +18,7 @@ function Skills() {
   const loaded = () => {
     return (
       <>
-        <PageHeaderContent headerText={'Skills'}/>
+        <PageHeaderContent headerText={'Skills'} />
         <div className="skills__skillWrapper pt-[50px] w-full" style={{ maxWidth: "1000px" }}>
           <div className="fade-up duration-500">
 

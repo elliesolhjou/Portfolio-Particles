@@ -6,7 +6,7 @@ import "./style.scss";
 
 const Projects = () => {
     const [filterValue, setFilterValue] = useState(1);
-    const [hoveredIndex, setHoveredIndex] = useState(null);
+
 
     const handleFilter = (id) => {
         setFilterValue(id);
@@ -21,11 +21,11 @@ const Projects = () => {
         <div>
         <section className="portfolio" id="portfolio">
             <PageHeaderContent headerText={"My Portfolio"}
-            icon={<AiFillProject size={40}/>} />
+            icon={<AiFillProject size={50}/>} />
             <div className="portfolio__content">
                 <ul className="portfolio__content__filter">
                     {filterOptions.map((option) => (
-                    <li key={option.id} onClick={()=> handleFilter(option.id)}>{option.label}</li>
+                    <li key={option.id} onClick={()=> handleFilter(option.id)} className={option.id===filterValue ? 'active' : ''}>{option.label}</li>
                     ))}
                 </ul>
             <div className="portfolio_content__cards">
