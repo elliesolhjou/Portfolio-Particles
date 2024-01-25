@@ -4,12 +4,12 @@ import Home from "../../pages/home";
 import Projects from "../../pages/projects";
 import Skills from "../../pages/skills"
 import Contact from "../../pages/contact"
-import Theme from '../theme'
+
 
 export default function Main() {
   return (
     <div className="Main__main_content-wrapper">
-      <Theme/>
+      
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/" element={<Home />} />

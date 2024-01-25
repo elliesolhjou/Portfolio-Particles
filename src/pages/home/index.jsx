@@ -1,5 +1,7 @@
 import "./style.scss";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa"
+import { SiGmail } from "react-icons/si";
 import { Animate } from "react-simple-animate";
 import { useEffect, useMemo, useState, useLocation } from "react"
 import Particles, { initParticlesEngine }  from "@tsparticles/react";
@@ -109,12 +111,14 @@ const Home = () => {
           >
             <div className="contact-wrapper">
               <div className="contact-wrapper__button-wrapper">
-                <button>Email Me</button>
-                <button>Download Resume</button>
+                {/* <button>Email Me</button> */}
+                <button>Download My Resume</button>
               </div>
               <div className="contact-wrapper__social-wrapper">
-                <FaLinkedin size={40} />
-                <FaGithub size={40} />
+                <a href="https://www.linkedin.com/in/elliesolhjou">{<FaLinkedin size={40} />}</a>
+                <a href="https://github.com/elliesolhjou">{<FaGithub size={40} />}</a>
+                <a href="https://t.me/Ellliiiie">{<FaTelegram  size={40} />}</a>
+                <SiGmail size={40} />
               </div>
             </div>
           </Animate>

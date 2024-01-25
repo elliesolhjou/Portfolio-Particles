@@ -6,63 +6,64 @@
     width: 100%;
     margin-top: 40px;
     &__personalWrapper {
-        flex:1;
-        h3 {
-            margin-top: -30px;
-            margin-bottom: 20px;
-            font-size: 2.5rem;
-            color: var(--selected-theme-main-color);
-            font-weight: 700;
-        }
-        h3.personalContent {
-            padding-top: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        p {
-            color: var(--selected-theme-sub-text-color);
-            font-size: 1.8rem;
-            line-height: 1.65;
-            padding-bottom: 20px;
-            // border-bottom: 1px dashed var(--selected-theme-main-color);
-        }
+      flex: 1;
+      h3 {
+        margin-top: -30px;
+        margin-bottom: 20px;
+        font-size: 4rem;
+        color: var(--selected-theme-main-color);
+        font-weight: 700;
+      }
+      h3.personalContent {
+        padding-top: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: var(--selected-theme-sub-text-color);
+        font-size: 3rem;
+        line-height: 1.65;
+        padding-bottom: 20px;
+        // border-bottom: 1px dashed var(--selected-theme-main-color);
+      }
 
-        ul > li {
-            line-height: 1rem;
-            margin-bottom: 15px;
-            list-style: none;
+      ul > li {
+        line-height: 1rem;
+        margin-bottom: 15px;
+        list-style: none;
 
-            span.title {
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            border-bottom: 2px solid var(--selected-theme-sub-text-color);
-            display: inline-block;
-            margin-right: 16px;
-            position: relative;
-            padding-bottom: 1px;
-            color: var(--selected-theme-sub-text-color);
-            }
-            span.value {
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            border-bottom: 2px solid var(--selected-theme-sub-text-color);
-            display: inline-block;
-            margin-right: 16px;
-            position: relative;
-            padding-bottom: 1px;
-            color: var(--selected-theme-sub-text-color);
-            border-bottom: none;
-            }
+        span.title {
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          border-bottom: 2px solid var(--selected-theme-sub-text-color);
+          display: inline-block;
+          margin-right: 16px;
+          position: relative;
+          padding-bottom: 1px;
+          color: var(--selected-theme-sub-text-color);
         }
+        span.value {
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          border-bottom: 2px solid var(--selected-theme-sub-text-color);
+          display: inline-block;
+          margin-right: 16px;
+          position: relative;
+          padding-bottom: 1px;
+          color: var(--selected-theme-sub-text-color);
+          border-bottom: none;
+        }
+      }
     }
     &__serviceWrapper {
       display: flex;
-      flex:1;
+      flex: 1;
       align-items: center;
-      justify-content: center; 
+      justify-content: center;
       flex-direction: column;
+      scale: 2;
 
       &__innerContent {
         width: 350px;
@@ -77,73 +78,95 @@
         );
         animation: rotation 10s linear 1s infinite;
 
-
         div:nth-child(1) {
-            position: absolute;
-            top: -11%;
-            left: 41.5%;
+          position: absolute;
+          top: -11%;
+          left: 41.5%;
         }
         div:nth-child(2) {
-            position: absolute;
-            right: -7%;
-            top: 40%;
+          position: absolute;
+          right: -7%;
+          top: 40%;
         }
         div:nth-child(3) {
-            position: absolute;
-            bottom: -10%;
-            left: 41.5%;
+          position: absolute;
+          bottom: -10%;
+          left: 41.5%;
         }
         div:nth-child(4) {
-            position: absolute;
-            left: -7%;
-            top: 40%;
+          position: absolute;
+          left: -7%;
+          top: 40%;
         }
       }
     }
   }
 }
 
-
-@keyframes  rotation{
-    100%{
-        transform: rotate(360deg);
-
-    }
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-@media only screen and (max-width:768px){
-    .about__content{
-        flex-direction: column;
-        &__serviceWrapper{
-            margin-top:80px;
-            margin-bottom: 20px;
-            &__innerContent{
-                width: 250px;
-                height: 250px;
-                background: radial-gradient(100px, var(--selected-theme-main-color),transparent 120%);
-
-                div:nth-child(1) {
-                    position: absolute;
-                    top: -11%;
-                    left: 40%;
-                }
-                div:nth-child(2) {
-                    position: absolute;
-                    right: -7%;
-                    top: 40%;
-                }
-                div:nth-child(3) {
-                    position: absolute;
-                    bottom: -10%;
-                    left: 40%;
-                }
-                div:nth-child(4) {
-                    position: absolute;
-                    left: -7%;
-                    top: 40%;
-                }
-
-            }
-        }
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .wrapper h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-left: 30px;
+  }
+  .about__content {
+    &__personalWrapper p {
+      font-size: 15px;
     }
+    flex-direction: column;
+    &__serviceWrapper {
+      margin-top: 80px;
+      margin-bottom: 20px;
+      &__innerContent {
+        width: 250px;
+        height: 250px;
+        background: radial-gradient(
+          100px,
+          var(--selected-theme-main-color),
+          transparent 120%
+        );
+
+        div:nth-child(1) {
+          position: absolute;
+          top: -11%;
+          left: 40%;
+        }
+        div:nth-child(2) {
+          position: absolute;
+          right: -7%;
+          top: 40%;
+        }
+        div:nth-child(3) {
+          position: absolute;
+          bottom: -10%;
+          left: 40%;
+        }
+        div:nth-child(4) {
+          position: absolute;
+          left: -7%;
+          top: 40%;
+        }
+      }
+    }
+  }
+  .about__content__personalWrapper p {
+    font-size: 12px;
+    font-weight: 230;
+    margin-bottom: 50px;
+    margin-left: 150px;
+  }
+  .about__content__serviceWrapper__innerContent {
+    scale: 0.8;
+  }
 }

@@ -16,12 +16,14 @@ export default function Header(){
     return(
         
         <div className="Header">
+            
             <nav className="navbar">
                 <div className="navbar__container">
                     <Link to={"/"} className="navbar__container__logo">
                         <FaReact size={30}/>
                     </Link>
                     <ul className={click? "navbar__container__menu active" : "navbar__container__menu"}>
+                    <Theme/>
                         {
                             navMenus?.map((item, key)=>(
                                 <li key={key} className="navbar__container__menu__item">
@@ -29,7 +31,9 @@ export default function Header(){
                                         {item.label}
                                     </Link>
                                 </li>
+                                
                             ))
+                            
                         }
                     </ul>
                     <div className="nav-icon" onClick={handleClick}>

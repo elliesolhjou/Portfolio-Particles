@@ -89,3 +89,14 @@
     color: var(--selected-theme-main-color);
   }
 }
+@media only screen and (min-width:768px){
+  .nav-icon{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width:767){
+  .theme-wrapper__toggle-icon {
+    visibility: hidden;
+  }
+}

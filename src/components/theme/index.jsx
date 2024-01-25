@@ -1,4 +1,3 @@
-// import React from 'react';
 import {useState, useEffect} from 'react'
 import { ImCog } from "react-icons/im";
 import setTheme from '../../helpers/theme'
