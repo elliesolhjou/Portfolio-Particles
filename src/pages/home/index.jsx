@@ -6,6 +6,7 @@ import { Animate } from "react-simple-animate";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
+import { tsParticles } from 'tsparticles/engine';
 
 const Home = () => {
   const [init, setInit] = useState(false);
