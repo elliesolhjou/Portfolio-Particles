@@ -116,8 +116,11 @@
 
   .about__content {
     margin-top: 0;
+    justify-content: center;
     &__personalWrapper p {
       font-size: 20px;
+      justify-content: center;
+      text-align: center;
     }
     flex-direction: column;
     &__serviceWrapper {
