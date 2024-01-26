@@ -9,3 +9,5 @@ Currently, two official plugins are available:
 # Portfolio-Particles
 
 
+<!-- <div id="tsparticles"></div> -->
+    <!-- <script type="module" src="/src/tsparticles.engine.min.js"></script> -->
