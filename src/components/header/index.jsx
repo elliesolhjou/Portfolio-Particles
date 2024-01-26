@@ -4,7 +4,7 @@ import {HiX} from "react-icons/hi"
 import navMenus from "./config"
 import { useState } from "react"
 import "./styles.scss"
-import Theme from '../theme'
+// import Theme from '../theme'
 
 console.log(navMenus)
 export default function Header(){
@@ -23,7 +23,7 @@ export default function Header(){
                         <FaReact size={30}/>
                     </Link>
                     <ul className={click? "navbar__container__menu active" : "navbar__container__menu"}>
-                    <Theme/>
+                    {/* <Theme/> */}
                         {
                             navMenus?.map((item, key)=>(
                                 <li key={key} className="navbar__container__menu__item">

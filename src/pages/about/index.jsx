@@ -1,6 +1,8 @@
 import PageHeaderContent from "../../components/pageHeader";
 import { BsInfoCircleFill } from "react-icons/bs";
-import personalData from "./about.js";
+import { FaDatabase } from "react-icons/fa"
+import { TbApi } from "react-icons/tb"
+// import personalData from "./about.js";
 // import {DiApple} from 'react-icons/di'
 import { FaDev, FaAws, FaFigma, FaNodeJs, FaPython, FaCss3 } from "react-icons/fa";
 import {Animate} from 'react-simple-animate'
@@ -54,10 +56,10 @@ const About = () => {
             <div className="about__content__serviceWrapper">
                 <div className="about__content__serviceWrapper__innerContent">
                     <div>
-                    <FaAws size={60} color="var(--selected-theme-main-color)" />
+                    <TbApi size={60} color="var(--selected-theme-main-color)" />
                     </div>
                     <div>
-                    <FaDev size={60} color="var(--selected-theme-main-color)" />
+                    <FaDatabase size={60} color="var(--selected-theme-main-color)" />
                     </div>
                     <div>
                     <FaPython size={60} color="var(--selected-theme-main-color)" />

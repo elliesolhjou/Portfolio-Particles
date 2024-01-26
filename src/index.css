@@ -11,7 +11,7 @@
   );
   
   --yellow-theme-background-color: #1d1d1d;
-  --yellow-theme-main-color: #fff240c4;
+  --yellow-theme-main-color: #C7B198;
   --yellow-theme-sub-text-color: #ffffffb2;
   --yellow-theme-nav-background-color: #181818;
 
@@ -54,3 +54,9 @@ body {
 #root {
   height: 100%;
 }
+
+
+.App__footer_Wrapper{
+  margin: 50%vw;
+}
+

@@ -16,10 +16,10 @@ const navMenus = [
         to: "/skills"
     },
 
-    {
-        label:"CONTACT",
-        to: "/contact"
-    },
+    // {
+    //     label:"CONTACT",
+    //     to: "/contact"
+    // },
 ]
 
 export default navMenus
