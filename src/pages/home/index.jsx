@@ -109,7 +109,7 @@ const Home = () => {
         >
           <div className="contact-wrapper">
             <div className="contact-wrapper__button-wrapper">
-              <a href="https://docs.google.com/document/d/1vHLU-MM3h4Knslp_m91WiQpwY69LdFYyI6JhQtEvP8U/edit">
+              <a href="https://docs.google.com/document/d/1JEg8J3viiuRVwQFo0kKDJDiCgbEimbfMv-a-yS4gD5Q/edit">
                 Download My Resume
               </a>
             </div>
@@ -132,4 +132,3 @@ const Home = () => {
   );
 };
 
-export default Home;
