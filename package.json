@@ -12,6 +12,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build",
+    "start:prod": "serve -s dist"
   },
   "dependencies": {
     "@tsparticles/react": "^3.0.0",

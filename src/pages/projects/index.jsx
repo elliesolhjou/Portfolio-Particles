@@ -48,7 +48,7 @@ const Projects = () => {
                     <div className="projectName">
                       <p>{item.projectName}</p>
                       <button className="button">
-                        <a href={item.projectLink}>Live App</a>
+                        <a href={item.projectLink}>Website</a>
                       </button>
                       {item.sectionId === 2 ? (
                         <button className="button">
