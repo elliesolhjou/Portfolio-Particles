@@ -1,5 +1,6 @@
 import PageHeaderContent from "../../components/pageHeader";
 import { useState, useEffect } from "react";
+import { GiSkills } from "react-icons/gi"
 import "./style.scss";
 
 function Skills() {
@@ -17,22 +18,19 @@ function Skills() {
 
   const loaded = () => {
     return (
-      <>
-        <PageHeaderContent headerText={'Skills'} />
-        <div className="skills__skillWrapper pt-[50px] w-full" style={{ maxWidth: "1000px" }}>
-          <div className="fade-up duration-500">
-
-          </div>
-          <div className="skills__skillWrapper__card w-full  grid grid-cols-4 sm:grid-cols-4 gap-6 text-center py-6 fade-up">
+      <section className="skills" id="skills">
+        <PageHeaderContent headerText={'Skills'} icon={<GiSkills size={50}/>}/>
+        <div className="skills__content">
+          <div className="skills__content__card">
             {skills.map((skill, idx) => (
               <div
                 key={idx}
-                className="shadow-lg rounded-md shadow-[#160a0b] dark:hover:bg-red-500 hover:scale-110 hover:bg-var(--selected-theme-main-color)-500 duration-500 p-2"
+                className="skills__content__card__item"
                 style={{ flex: "1 0 0" }}
               >
-                <p className="text-[1.25vw]">{skill.name}</p>
+                {/* <p className="skills__content__card__item__p">{skill.name}</p> */}
                 <img
-                  className="w-[150px] mx-auto pb-2"
+                  className="skills__content__card__item__img"
                   src={skill.image}
                   alt={skill.name}
                 />
@@ -40,7 +38,7 @@ function Skills() {
             ))}
           </div>
         </div>
-      </>
+      </section>
     );
   };
 

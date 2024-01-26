@@ -17,7 +17,7 @@
     "image": "https://coreyloftus.com/static/media/javascript.1ccd6ef9bb1f9c84ef00.png"
   },
   {
-    "name": "React",
+    "name": "React.JS",
     "image": "https://coreyloftus.com/static/media/react.0cf951a69d8e58f83f9d.png"
   },
   {
@@ -27,6 +27,11 @@
   {
     "name": "MongoDB",
     "image": "https://coreyloftus.com/static/media/mongo.2a1528ddc31d4ce8518d.png"
+  },
+  {
+    "name": "Postgres",
+    "image": "https://coreyloftus.com/static/media/postgres.578077eca13c03fd4527.png"
   }
+ 
 
 ]
