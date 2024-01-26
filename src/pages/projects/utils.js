@@ -16,20 +16,6 @@ export const portfolioData = [
   },
   {
     sectionId: 2,
-    projectName: "Memory Game",
-    projectLink: "#",
-    projectGithub:"https://github.com/elliesolhjou/MemoryGame",
-    image: ImageFive,
-  },
-  {
-    sectionId: 3,
-    projectName: "Hotel Swexan",
-    projectLink: "https://www.harwoodinternational.com/portfolio/hotel-swexan/",
-    projectGithub:"#",
-    image: ImageThree,
-  },
-  {
-    sectionId: 2,
     projectName: "All-Star AI",
     projectLink: "https://allstarai.netlify.app/",
     projectGithub:"https://github.com/CarterN2000/Project-3",
@@ -41,6 +27,20 @@ export const portfolioData = [
     projectLink: "",
     projectGithub:"",
     image: ImageFour,
+  },
+  {
+    sectionId: 2,
+    projectName: "Memory Game",
+    projectLink: "#",
+    projectGithub:"https://github.com/elliesolhjou/MemoryGame",
+    image: ImageFive,
+  },
+  {
+    sectionId: 3,
+    projectName: "Hotel Swexan",
+    projectLink: "https://www.harwoodinternational.com/portfolio/hotel-swexan/",
+    projectGithub:"#",
+    image: ImageThree,
   },
   {
     sectionId: 3,

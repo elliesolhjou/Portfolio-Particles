@@ -2,7 +2,7 @@
   &__content {
     padding: 20px;
     width: 100%;
-
+    padding-bottom: 30%;
     &__filter {
       display: inline-block;
       margin: 0 auto;
@@ -24,7 +24,7 @@
         font-family: Roboto, sans-serif;
         &.active {
           background: var(--selected-theme-main-color);
-          color: var(--selected-theme-sub-text-color);
+          color: var(--selected-theme-background-color);
           font-weight: 600;
           border-radius: 26px;
         }

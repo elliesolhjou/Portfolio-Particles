@@ -29,7 +29,13 @@ const About = () => {
                 }}
                 >
                     {/* <h3 className="developerContent">Full Stack Developer</h3> */}
-                    <p>Greetings! I'm currently on an exhilarating path towards becoming a software engineer, fueled by my passion for creative problem-solving. My background in project management, where I played a crucial role in overseeing construction projects valued at over $200 million, revealed my keen attention to detail. Working closely with diverse IT and software engineering teams on innovative smart building projects during this time sparked my curiosity and enthusiasm for software engineering, and I was instantly captivated. In my recent bootcamp journey, I delved into programming languages such as HTML, CSS, JavaScript, and Python. However, it's not just about the code! I've also been honing essential soft skills like meticulous attention to detail, effective communication, and being a valuable team player. I firmly believe that cultivating these qualities is pivotal for thriving in the dynamic field of software engineering. I'm super excited about the exciting journey that lies ahead! 🚀</p>
+                    <p>As a budding software engineer with a deep-rooted passion for problem-solving, I have successfully transitioned from a career in project management, where I oversaw construction projects valued at over $200 million, to the dynamic world of tech. My experience in managing large-scale, detail-intensive projects and collaborating with IT and software engineering teams on cutting-edge smart building initiatives ignited my interest in software development.
+
+Having recently completed an intensive boot camp, I have rigorously developed my technical proficiency in programming languages such as JavaScript, Python, HTML, and CSS. This hands-on experience has been instrumental in deepening my understanding of software development and its practical applications.
+
+My journey in software engineering is not just about technical growth but also about nurturing vital soft skills. My strong background in project management has honed my attention to detail, effective communication, and teamwork abilities – skills I consider crucial for success in software engineering.
+
+I am now eagerly looking forward to applying my combined expertise in project management and newly acquired technical skills in a software engineering role, aiming to contribute to innovative solutions and drive technological advancement. 🚀</p>
                 </Animate>
                 <Animate
                 play
