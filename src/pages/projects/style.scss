@@ -71,6 +71,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          border-radius: 5%;
         }
       }
     }
@@ -118,11 +119,11 @@
   }
 }
 
-.portfolio__content__cards__item__img{
+.portfolio__content__cards__item__img {
   max-width: auto;
   max-height: auto;
+  border-radius: 5%;
 }
-
 
 @keyframes typingEffect {
   from {
@@ -134,8 +135,11 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .portfolio h1 {
+    padding: 0;
+  }
   .portfolio__content__filter > li {
-    font-size: 11px;
+    font-size: 15px;
   }
   .portfolio_content__cards {
     grid-template-columns: repeat(1, 1fr);
@@ -147,7 +151,6 @@
     width: 50%;
     font-size: 1rem;
   }
-
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -158,11 +161,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .projectName p {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   .projectName .button {
     width: 50%;
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   .theme-wrapper__toggle-icon svg {
     scale: 0.6;

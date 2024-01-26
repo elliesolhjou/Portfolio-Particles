@@ -20,7 +20,7 @@ const Projects = () => {
     <div>
       <section className="portfolio" id="portfolio">
         <PageHeaderContent
-          headerText={"My Portfolio"}
+          headerText={"Portfolio"}
           icon={<AiFillProject size={50} />}
         />
         <div className="portfolio__content">

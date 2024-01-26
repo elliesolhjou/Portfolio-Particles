@@ -1,4 +1,7 @@
 .about {
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
   &__content {
     display: flex;
     gap: 20px;
@@ -110,20 +113,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .wrapper h1 {
-    font-size: 3.5rem;
-    font-weight: 400;
-    padding-bottom: 0;
-  }
+
   .about__content {
     margin-top: 0;
     &__personalWrapper p {
-      font-size: 15px;
+      font-size: 20px;
     }
     flex-direction: column;
     &__serviceWrapper {
@@ -162,8 +156,8 @@
     }
   }
   .about__content__personalWrapper p {
-    font-size: 12px;
-    font-weight: 230;
+    font-size: 25px;
+    font-weight: 250;
     margin-bottom: 50px;
     align-items: center;
     justify-content: center;

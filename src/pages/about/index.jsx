@@ -35,7 +35,7 @@ Having recently completed an intensive boot camp, I have rigorously developed my
 
 My journey in software engineering is not just about technical growth but also about nurturing vital soft skills. My strong background in project management has honed my attention to detail, effective communication, and teamwork abilities – skills I consider crucial for success in software engineering.
 
-I am now eagerly looking forward to applying my combined expertise in project management and newly acquired technical skills in a software engineering role, aiming to contribute to innovative solutions and drive technological advancement. 🚀</p>
+I am now eagerly looking forward to applying my combined expertise in project management and newly acquired technical skills in a software engineering role, aiming to contribute to innovative solutions and drive technological advancement.👨‍💻🚀</p>
                 </Animate>
                 <Animate
                 play

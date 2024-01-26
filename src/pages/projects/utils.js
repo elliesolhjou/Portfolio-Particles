@@ -23,7 +23,7 @@ export const portfolioData = [
   },
   {
     sectionId: 2,
-    projectName: "PawzBe",
+    projectName: "Pawzbe",
     projectLink: "",
     projectGithub:"",
     image: ImageFour,
