@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa"
 import { SiGmail } from "react-icons/si";
 import { Animate } from "react-simple-animate";
-import { useEffect, useMemo, useState, useLocation } from "react"
+import { useEffect, useMemo, useState} from "react"
 import Particles, { initParticlesEngine }  from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 

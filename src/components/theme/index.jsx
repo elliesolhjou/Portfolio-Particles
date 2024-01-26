@@ -26,7 +26,6 @@ const Theme = () => {
     const [theme, setCurrentTheme] = useState('yellow')
     const [toggle, setToggle] = useState(false)
 
-    // color id is the param provided to this function inside the map fn below
     const handleToggleTheme=(currentId)=>{
         setCurrentTheme(currentId)
         console.log(currentId)

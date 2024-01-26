@@ -97,10 +97,8 @@
     font-weight: 500;
     font-size: 5rem;
     position: relative;
-    // transform: translate(0%, -50%);
     overflow: hidden;
     text-align: center;
-    // animation: typingEffect 1s steps(30, end) forwards;
     white-space: nowrap;
   }
   &:hover p {
@@ -123,7 +121,6 @@
 .portfolio__content__cards__item__img{
   max-width: auto;
   max-height: auto;
-  // position: relative;
 }
 
 
@@ -150,12 +147,7 @@
     width: 50%;
     font-size: 1rem;
   }
-  // .theme-wrapper__toggle-icon svg {
-  //   // visibility: hidden;
-  // }
-  // .wrapper span svg {
-  //   visibility: hidden;
-  // }
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -173,7 +165,6 @@
     font-size: 1rem;
   }
   .theme-wrapper__toggle-icon svg {
-    // visibility: hidden;
     scale: 0.6;
   }
   .wrapper span svg {

@@ -28,7 +28,7 @@ const About = () => {
                     transform: 'translateX(0px)'
                 }}
                 >
-                    {/* <h3 className="developerContent">Full Stack Developer</h3> */}
+                    
                     <p>As a budding software engineer with a deep-rooted passion for problem-solving, I have successfully transitioned from a career in project management, where I oversaw construction projects valued at over $200 million, to the dynamic world of tech. My experience in managing large-scale, detail-intensive projects and collaborating with IT and software engineering teams on cutting-edge smart building initiatives ignited my interest in software development.
 
 Having recently completed an intensive boot camp, I have rigorously developed my technical proficiency in programming languages such as JavaScript, Python, HTML, and CSS. This hands-on experience has been instrumental in deepening my understanding of software development and its practical applications.
@@ -48,15 +48,6 @@ I am now eagerly looking forward to applying my combined expertise in project ma
                     transform: 'translateX(0px)'
                 }}
                 >
-                    {/* <h3 className="personalContent"> Personal Information </h3>
-                    <ul>
-                        {personalData.map((item, key) => (
-                        <li key={key}>
-                            <span className="title">{item.label}</span>
-                            <span className="value">{item.value}</span>
-                        </li>
-                        ))}
-                    </ul> */}
                 </Animate>
             </div>
             <div className="about__content__serviceWrapper">

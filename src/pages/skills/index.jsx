@@ -28,7 +28,6 @@ function Skills() {
                 className="skills__content__card__item"
                 style={{ flex: "1 0 0" }}
               >
-                {/* <p className="skills__content__card__item__p">{skill.name}</p> */}
                 <img
                   className="skills__content__card__item__img"
                   src={skill.image}

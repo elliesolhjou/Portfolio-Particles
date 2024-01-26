@@ -3,7 +3,7 @@ import About from "../../pages/about";
 import Home from "../../pages/home";
 import Projects from "../../pages/projects";
 import Skills from "../../pages/skills"
-// import Contact from "../../pages/contact"
+
 
 
 export default function Main() {
@@ -15,7 +15,7 @@ export default function Main() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />}/>
-        {/* <Route path="/contact" element={<Contact />}/> */}
+
       </Routes>
     </div>
   );
