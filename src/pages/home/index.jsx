@@ -109,8 +109,7 @@ const Home = () => {
         >
           <div className="contact-wrapper">
             <div className="contact-wrapper__button-wrapper">
-              {/* <button>Email Me</button> */}
-              <a href="https://drive.google.com/file/d/1SqRmR-2eXA1_tH23ghHqET0AqeBxebW5/view?usp=drive_link">
+              <a href="https://docs.google.com/document/d/1vHLU-MM3h4Knslp_m91WiQpwY69LdFYyI6JhQtEvP8U/edit">
                 Download My Resume
               </a>
             </div>
