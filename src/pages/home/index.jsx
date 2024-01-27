@@ -4,8 +4,7 @@ import { FaTelegram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { Animate } from "react-simple-animate";
 import { useEffect, useMemo, useState } from "react";
-import { tsParticles } from 'tsparticles';
-import Particles, {initParticlesEngine} from "@tsparticles/react";
+import Particles  from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
 
