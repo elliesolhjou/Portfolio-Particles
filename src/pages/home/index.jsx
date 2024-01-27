@@ -4,25 +4,29 @@ import { FaTelegram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { Animate } from "react-simple-animate";
 import { useEffect, useMemo, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
+import Particles, {initParticlesEngine} from "@tsparticles/react";
 import { loadFull } from "tsparticles";
-// import { tsParticles } from 'tsparticles/engine';
+
 
 const Home = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadFull(engine);
-    }).then(() => {
-      setInit(true);
-    });
+    const initParticles = async () => {
+      try {
+        const engine = await loadFull(tsParticles);
+        setInit(true);
+      } catch (error) {
+        console.error("Error initializing particles:", error);
+      }
+    };
+    initParticles();
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-  const options = useMemo(() => ({
+  // const particlesLoaded = (container) => {
+  //   console.log(container);
+  // };
+  const particlesOptions = useMemo(() => ({
     background: {
       color: {
         value: "#1d1d1d",
@@ -91,7 +95,9 @@ const Home = () => {
   }));
   return (
     <section className="home" id="home">
-      <Particles id="particles" options={options} init={particlesLoaded} />
+      {init && (
+        <Particles id="particles" options={particlesOptions} />
+      )}
       <div className="home__text-wrapper">
         <h1>
           Hello, I am Ellie
@@ -133,4 +139,4 @@ const Home = () => {
   );
 };
 
-export default Home()
+export default Home();
